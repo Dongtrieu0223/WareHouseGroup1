@@ -11,6 +11,7 @@ import java.util.stream.StreamSupport;
 
 import model.Config;
 import model.Log;
+import task1.DownloadAndInsertLog;
 import task2.UploadStaging;
 import utils.ConnectDB;
 import utils.ConvertModel;
@@ -33,7 +34,7 @@ public class MainProcess {
 		}
 		conn.close();
 		// task 1
-
+		DownloadAndInsertLog.downloadAndInsertLog(configs);
 		// task 2 task 3
 		
 		//get all Log
