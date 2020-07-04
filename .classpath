@@ -25,5 +25,7 @@
 	<classpathentry kind="lib" path="poi-scratchpad-4.1.2.jar"/>
 	<classpathentry kind="lib" path="SparseBitSet-1.2.jar"/>
 	<classpathentry kind="lib" path="xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="chilkat.dll"/>
+	<classpathentry kind="lib" path="chilkat.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
