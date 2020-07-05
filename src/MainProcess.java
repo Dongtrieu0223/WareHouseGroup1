@@ -62,11 +62,12 @@ public class MainProcess {
 			//excute task 2
 			log.setStatus(UploadStaging.uploadStaging(configs, log));
 			
+			//excute task3
+			if(log.getStatus().equals(SystemContain.UPLOAD_STAGING)){
+			InsertWarehouse.uploadWarehouse(configs,log);
 		}
-	
-
 	}
-
+}
 	public static String[] splitPath(String pathString) {
 		Path path = Paths.get(pathString);
 		return StreamSupport.stream(path.spliterator(), false).map(Path::toString).toArray(String[]::new);
