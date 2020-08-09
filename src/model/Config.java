@@ -1,64 +1,39 @@
 package model;
 
 public class Config {
-	private String nameConfig;
-	private String nameDatabase;
-	private String userNameDatabase;
-	private String passwordDatabase;
-	private String querySQL;
+	private int id_Config;
+	private String name_Config;
 	private String hostName;
 	private int port;
 	private String userNameAccount;
 	private String passwordAccount;
-	private String fileFormat;
-	private String remoteDir;
-	private String localDir;
+	private String file_Format;
+	private String remote_Dir;
+	private String local_Dir;
 	
 	
-	public String getFileFormat() {
-		return fileFormat;
-	}
-	public void setFileFormat(String fileFormat) {
-		this.fileFormat = fileFormat;
-	}
-	public String getRemoteDir() {
-		return remoteDir;
-	}
-	public void setRemoteDir(String remoteDir) {
-		this.remoteDir = remoteDir;
-	}
-	public String getLocalDir() {
-		return localDir;
-	}
-	public void setLocalDir(String localDir) {
-		this.localDir = localDir;
-	}
+	private String name_db_Control;
+	private String name_table_config;
+	private String name_table_log;
 	
-	public String getNameDatabase() {
-		return nameDatabase;
-	}
-	public void setNameDatabase(String nameDatabase) {
-		this.nameDatabase = nameDatabase;
-	}
-	public String getUserNameDatabase() {
-		return userNameDatabase;
-	}
-	public void setUserNameDatabase(String userNameDatabase) {
-		this.userNameDatabase = userNameDatabase;
-	}
-
+	private String name_db_Staging;
+	private String name_table_staging;
 	
-	public String getPasswordDatabase() {
-		return passwordDatabase;
+	private String name_db_Warehouse;
+	private String name_table_warehouse;
+	
+	
+	public int getId_Config() {
+		return id_Config;
 	}
-	public void setPasswordDatabase(String passwordDatabase) {
-		this.passwordDatabase = passwordDatabase;
+	public void setId_Config(int id_Config) {
+		this.id_Config = id_Config;
 	}
-	public String getQuerySQL() {
-		return querySQL;
+	public String getName_Config() {
+		return name_Config;
 	}
-	public void setQuerySQL(String querySQL) {
-		this.querySQL = querySQL;
+	public void setName_Config(String name_Config) {
+		this.name_Config = name_Config;
 	}
 	public String getHostName() {
 		return hostName;
@@ -84,11 +59,64 @@ public class Config {
 	public void setPasswordAccount(String passwordAccount) {
 		this.passwordAccount = passwordAccount;
 	}
-	public String getNameConfig() {
-		return nameConfig;
+	public String getFile_Format() {
+		return file_Format;
 	}
-	public void setNameConfig(String nameConfig) {
-		this.nameConfig = nameConfig;
+	public void setFile_Format(String file_Format) {
+		this.file_Format = file_Format;
 	}
-	
+	public String getRemote_Dir() {
+		return remote_Dir;
+	}
+	public void setRemote_Dir(String remote_Dir) {
+		this.remote_Dir = remote_Dir;
+	}
+	public String getLocal_Dir() {
+		return local_Dir;
+	}
+	public void setLocal_Dir(String local_Dir) {
+		this.local_Dir = local_Dir;
+	}
+	public String getName_db_Control() {
+		return name_db_Control;
+	}
+	public void setName_db_Control(String name_db_Control) {
+		this.name_db_Control = name_db_Control;
+	}
+	public String getName_table_config() {
+		return name_table_config;
+	}
+	public void setName_table_config(String name_table_config) {
+		this.name_table_config = name_table_config;
+	}
+	public String getName_table_log() {
+		return name_table_log;
+	}
+	public void setName_table_log(String name_table_log) {
+		this.name_table_log = name_table_log;
+	}
+	public String getName_db_Staging() {
+		return name_db_Staging;
+	}
+	public void setName_db_Staging(String name_db_Staging) {
+		this.name_db_Staging = name_db_Staging;
+	}
+	public String getName_table_staging() {
+		return name_table_staging;
+	}
+	public void setName_table_staging(String name_table_staging) {
+		this.name_table_staging = name_table_staging;
+	}
+	public String getName_db_Warehouse() {
+		return name_db_Warehouse;
+	}
+	public void setName_db_Warehouse(String name_db_Warehouse) {
+		this.name_db_Warehouse = name_db_Warehouse;
+	}
+	public String getName_table_warehouse() {
+		return name_table_warehouse;
+	}
+	public void setName_table_warehouse(String name_table_warehouse) {
+		this.name_table_warehouse = name_table_warehouse;
+	}
 }

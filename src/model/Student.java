@@ -3,9 +3,21 @@ package model;
 import java.sql.Date;
 
 public class Student {
-	private int mssv, idLog;
+	private int mssv, idLog, id, stt;
+	public int getStt() {
+		return stt;
+	}
+	public void setStt(int stt) {
+		this.stt = stt;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	private String ho, ten, lop, tenlop, sdt, email, quequan, ghichu;
-	private Date dob;
+	private Date dob, sk_date_dim, dt_expire;
 	
 	public int getMssv() {
 		return mssv;
@@ -73,6 +85,16 @@ public class Student {
 	public void setGhichu(String ghichu) {
 		this.ghichu = ghichu;
 	}
-	
-
+	public Date getSk_date_dim() {
+		return sk_date_dim;
+	}
+	public void setSk_date_dim(Date sk_date_dim) {
+		this.sk_date_dim = sk_date_dim;
+	}
+	public Date getDt_expire() {
+		return dt_expire;
+	}
+	public void setDt_expire(Date dt_expire) {
+		this.dt_expire = dt_expire;
+	}
 }
